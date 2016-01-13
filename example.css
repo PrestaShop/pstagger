@@ -1,0 +1,14 @@
+/*
+* jQuery Prestagify plugin
+* https://www.prestashop.com
+*
+* Copyright PrestaShop and other contributors
+* Released under the MIT license
+* https://tldrlegal.com/license/mit-license
+*
+* Date: 2016-01-13
+*/
+
+.myIconClass:before {
+    content: "X";
+}

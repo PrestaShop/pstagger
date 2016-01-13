@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery Prestagify plugin by PrestaShop</title>
+        <link rel="stylesheet" href="example.css" />
+        <link rel="stylesheet" href="jquery.prestagify.css" />
+    </head>
+    <body>
+        jQuery Prestagify Example:
+        <hr/>
+        <div class="wrapper">
+            <input id="prestagify-bar" type="text"/>
+        </div>
+        <hr/>
+        Currently tagged:
+        <div id="example1-tags">
+
+        </div>
+
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script type="text/javascript" src="jquery.prestagify.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('#prestagify-bar').Prestagify({
+                   inputPlaceholder: 'Add tag ...',
+                   clearAllBtn: true,
+                   clearAllIconClassAdditional: 'myIconClass',
+                   onTagsChanged: onTagsChange,
+                   onResetTags: onReset,
+               });
+
+            });
+
+            function onTagsChange(tagsList) {
+                $('#example1-tags').html(tagsList.join(', '));
+            }
+
+            function onReset() {
+                $('#example1-tags').empty();
+            }
+        </script>
+    </body>
+</html>
