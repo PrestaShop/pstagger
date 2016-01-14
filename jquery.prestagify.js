@@ -171,21 +171,26 @@
 
     var bindResetTagsEvent = function() {
         // Use delegate since we bind it before we insert the html in the DOM
+        var _this = this;
         $(document).delegate('.' + immutableConfig.clearAllSpanClass, 'click', function(){
-            // Empty tags list and tagify input
-            tagsList = [];
-            prestagifyInput.val('');
-            $('.' + immutableConfig.tagsWrapperClass).css('display', 'none');
-            $('.' + immutableConfig.tagInputWrapperClass).css('display', 'block');
-            prestagifyInput.focus();
-            // Empty existing Tags
-            $('.' + immutableConfig.tagClass).remove();
-            // Call the callback if one !
-            if (config.onResetTags !== null) {
-                config.onResetTags.call(config.context);
-            }
+            resetTags(true);
         });
     };
+
+    var resetTags = function(withCallback) {
+        // Empty tags list and tagify input
+        tagsList = [];
+        prestagifyInput.val('');
+        $('.' + immutableConfig.tagsWrapperClass).css('display', 'none');
+        $('.' + immutableConfig.tagInputWrapperClass).css('display', 'block');
+        prestagifyInput.focus();
+        // Empty existing Tags
+        $('.' + immutableConfig.tagClass).remove();
+        // Call the callback if one !
+        if (config.onResetTags !== null && withCallback === true) {
+            config.onResetTags.call(config.context);
+        }
+    }
 
 
     var bindClosingCrossEvent = function() {
@@ -246,6 +251,8 @@
         bindFocusInputEvent();
         bindClosingCrossEvent();
 
-        return this;
+        return {
+            'resetTags': resetTags,
+        }
     };
 }(jQuery));
