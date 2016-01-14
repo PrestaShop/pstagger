@@ -190,7 +190,7 @@
         if (config.onResetTags !== null && withCallback === true) {
             config.onResetTags.call(config.context);
         }
-    }
+    };
 
 
     var bindClosingCrossEvent = function() {
@@ -253,6 +253,6 @@
 
         return {
             'resetTags': resetTags,
-        }
+        };
     };
 }(jQuery));
