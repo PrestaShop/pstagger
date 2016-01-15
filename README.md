@@ -1,20 +1,20 @@
-# jQuery Prestagify Plugin
+# jQuery pstagger Plugin
 
 A simple jQuery plugin in order to create tags input bars, this is still a beta so play around with it but we do not recommend to use it in production at the moment.
 
 Do not hesitate to make PR for improvement or bug fixes !
 
-[Get it from Github](https://github.com/PrestaShop/Prestagify)
+[Get it from Github](https://github.com/PrestaShop/pstagger)
 
-Latest version: 0.1.1 (beta)
+Latest version: 0.2.0 (beta)
 
 
 ## Instructions
 
 Add mandatory files
 
-	<script src="jquery.prestagify.js"></script>
-	<link rel="stylesheet" type="text/css" href="jquery.prestagify.css" />
+	<script src="jquery.pstagger.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.pstagger.css" />
 
 Once that done, create an input like you would do in any other case:
 
@@ -22,13 +22,13 @@ Once that done, create an input like you would do in any other case:
 
 Then, simply call the tagsInput function on any field that should be treated as
 a list of tags.
-Then, make a call to Prestagify plugin on all desired input to be 'Prestagified'
+Then, make a call to pstagger plugin on all desired input to be 'Tagified'
 
-	$('#input-tags').Prestagify();
+	$('#input-tags').pstagger();
 
 ## Options
 
-	$(selector).Prestagify({
+	$(selector).pstagger({
 		/* CSS custom */
         wrapperClassAdditional: 'myClass',
         tagsWrapperClassAdditional: 'myClass',

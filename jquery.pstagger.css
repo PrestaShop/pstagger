@@ -1,5 +1,5 @@
 /*
-* jQuery Prestagify plugin
+* jQuery pstagger plugin
 * https://www.prestashop.com
 *
 * Copyright PrestaShop and other contributors
@@ -9,15 +9,15 @@
 * Date: 2016-01-13
 */
 
-.prestagifyAddTagInput:focus {
+.pstaggerAddTagInput:focus {
      outline: 0;
 }
 
-.prestagifyAddTagWrapper {
+.pstaggerAddTagWrapper {
     width: 99.5%;
 }
 
-.prestagifyResetTagsBtn {
+.pstaggerResetTagsBtn {
     cursor: pointer !important;
     margin-right: 15px;
     margin-top: 15px;
@@ -29,7 +29,7 @@
     top: 0;
     right: 0;
 }
-.prestagifyTagsWrapper {
+.pstaggerTagsWrapper {
     display: none;
     position: relative;
     border: 1px solid lightgrey;
@@ -38,7 +38,7 @@
     padding-left: 5px;
 }
 
-.prestagifyTag{
+.pstaggerTag{
     float: left;
     border-radius: 5px;
     height: 30px;
@@ -50,18 +50,18 @@
     font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-.prestagifyClosingCross {
+.pstaggerClosingCross {
     margin-left: 5px;
     font-size: 12px;
     color: black;
     text-decoration: none;
 }
 
-.prestagifyWrapper {
+.pstaggerWrapper {
     position: relative;
 }
 
-.prestagifyAddTagInput {
+.pstaggerAddTagInput {
     padding: 0;
     padding-left: 5px;
     border: 1px solid lightgrey;
