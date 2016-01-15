@@ -9,6 +9,11 @@ Do not hesitate to make PR for improvement or bug fixes !
 Latest version: 0.2.0 (beta)
 
 
+## Why we developed this plugin ?
+
+Most of the other tags bar plugins don't allow you to modify your tags once you've written them (you have to delete the tag and re-write it).
+Since we use this input bar as a search bar, we wanted to keep it fully editable and in the same time give a visual hint on how the search works.
+
 ## Instructions
 
 Add mandatory files
