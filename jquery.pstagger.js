@@ -115,7 +115,7 @@
     var formatSpanTag = function(tag) {
         var spanTag =   '<span class="' + immutableConfig.tagClass + ' ' + config.tagClassAdditional+'">' +
                             '<span>' +
-                                tag +
+                                $('<div/>').text(tag).html() +
                             '</span>';
         // Add closingCross if set to true
         if (config.closingCross === true) {
@@ -190,7 +190,7 @@
         if (config.onResetTags !== null && withCallback === true) {
             config.onResetTags.call(config.context);
         }
-    };
+    }
 
 
     var bindClosingCrossEvent = function() {
