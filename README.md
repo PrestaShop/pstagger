@@ -6,7 +6,7 @@ Do not hesitate to make PR for improvement or bug fixes !
 
 [Get it from Github](https://github.com/PrestaShop/pstagger)
 
-Latest version: 0.2.0 (beta)
+Latest version: 0.2.1 (beta)
 
 
 ## Why we developed this plugin ?
