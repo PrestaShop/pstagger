@@ -1,6 +1,6 @@
 {
   "name": "pstagger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple jQuery plugin in order to create tags input bars, this is still a beta so play around with it but we do not recommend to use it in production at the moment.",
   "main": "jquery.pstagger.js",
   "scripts": {
